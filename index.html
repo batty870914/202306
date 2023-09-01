@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Penguin games</title>
+<link rel="icon" href="groovin/assts/img/title.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<!-- styles -->
+<link rel="stylesheet" href="assets/css/fancybox/jquery.fancybox.css">
+<link href="assets/css/bootstrap.css" rel="stylesheet" />
+<link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/slippry.css">
+<link href="assets/css/style.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/color/default.css">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<script src="assets/js/modernizr.custom.js"></script>
+<style>
+.qtybtn {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.qtybtn:hover {
+  background-color: #409344;
+}
+
+
+
+</style>
+</head>
+<body>
+<header>
+
+<div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Penguin games</a>
+    </div>
+
+	<div class="navigation">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="current"><a class="scroll" href="#intro">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#marketplace">marketplace</a></li>
+		<li><a href="#contact">Contact</a></li>
+      </ul></nav>
+    </div><!-- /.navbar-collapse -->
+	</div>
+
+  </div>
+</div>
+
+</header>
+<!-- section intro -->
+<section id="intro">
+			<ul id="slippry-slider">
+			  <li>
+				<a href="#slide1"><img src="assets/img/slide/Penguin games1.png" alt=""></a>
+			  </li>
+			  <li>
+				<a href="#slide2"><img src="assets/img/slide/Penguin games2.png"  alt=""></a>
+			  </li>
+			  <li>
+				<a href="#slide3"><img src="assets/img/slide/Penguin games3.png" alt="<span class='red'>♥</span>"></a>
+			  </li>
+			</ul>
+</section>
+<!-- end intro -->
+<!-- Section about -->
+<section id="about" class="section">
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="heading">
+				<h3><span>什麼是Penguin games?</span></h3>
+			</div>
+			<div class="sub-heading">
+				<p><b><font color=#9370db>
+					 Penguin games是一個虛擬世界，充滿了被稱為 Penguin 的可愛的生物。Penguin 可以挖礦、交易、繁殖、闖關，甚至可以用來賺取可以在開放市場上交易的資源和收藏品。
+Penguin 旨在通過有趣、懷舊且迷人的遊戲向世界介紹一種令人興奮的新技術，稱為區塊鏈。
+				</b></font></p>
+				<!-- <div class="exchange-button"> -->
+    <button class="exchangeButton"><b><font color=#ff0000>立即兌換Penguin Coins購買企鵝吧!</font></b></button>
+	<span class="btn-holder">
+								<button id="btn-connect" class="">connect</button>
+								<div name="name" placeholder="Address" id="name"></div>
+								<span class="showAccount"></span>
+								<span class="showchainId"></span>
+								<br>
+								<div class="mint" style="display: none">
+								<input type='button' value='-' class='qtybtn minus-btn' field='quantity'>
+								<input type='number' name='quantity' value='0.1' step="0.10" id="amount" onkeydown="false" onfocus="blur()">
+								<input type='button' value='+' class='qtybtn plus-btn' field='quantity'>
+								<br>
+								<span id="showPrice" class="showPrice"></span>
+								<br>
+								<button id="mint" class="btn btn-primary">Mint</button>
+								<div>
+							</span>
+  </div>
+  
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="team-box">
+			<img src="assets/img/dummies/1.png" alt="" class="img-responsive" />
+			<div class="roles">
+				<h5><strong><font color=#ffa07a>Baby Penguin</font></strong></h5>
+				<p><font color=#cd853f>
+					#11111
+				</font></p>
+				<p><b>$1000 Penguin Coins</b></p>
+			</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="team-box">
+			<img src="assets/img/dummies/2.png" alt="" class="img-responsive" />
+			<div class="roles">
+				<h5><strong><font color=#ffa07a>Happy Penguin</font></strong></h5>
+				<p><font color=#cd853f>
+					#11222
+				</font></p>
+				<p><b>$1500 Penguin Coins</b></p>
+			</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="team-box">
+			<img src="assets/img/dummies/3.png" alt="" class="img-responsive" />
+			<div class="roles">
+				<h5><strong><font color=#ffa07a>Adventure Penguin</font></strong></h5>
+				<p><font color=#cd853f>
+					#11121
+				</font></p>
+				<p><b>$2000 Penguin Coins</b></p>
+			</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="team-box">
+			<img src="assets/img/dummies/4.png" alt="" class="img-responsive" />
+			<div class="roles">
+				<h5><strong><font color=#ffa07a>Wisdom Penguin</font></strong></h5>
+				<p><font color=#cd853f>
+					#11565
+				</font></p>
+				<p><b>$3000 Penguin Coins</b></p>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="row">
+			<video src="assets/img/dummies/1.mp4" controls alt="" class="img-responsive" ></video>
+	</div>
+<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="heading">
+				<h3><span>市場MARKETPLACE</span></h3>
+			</div>
+			<div class="sub-heading">
+				<p><b><font color=#9370db>
+					 隨時隨地與任何人交易或出售您的寶物。您擁有自己的企鵝，就像實體交易卡或小雕像一樣。
+				</b></font></p>
+				<button><h4><b>進入</b></h4></button>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end section about -->
+<!-- section marketplace -->
+<section id="marketplace" class="section gray">
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="heading">
+				<h3><span>Welcome to Penguin games！<br></h3></span>
+
+<h4><b><span><font color=#4682b4>在這個令人興奮的遊戲中，你將擁有自己的可愛小企鵝，並透過遊戲機制來賺取珍貴的Penguin coins。準備好開啟你的玩賺之旅嗎？</font></h4></b></span>
+			</div>
+			<div class=""><b>
+				<p>
+					 一、購買小企鵝：<br>
+在遊戲開始之前，你需要先購買一隻小企鵝。每隻小企鵝都有獨特的外觀和特性，選擇一隻你喜歡的企鵝開始遊戲吧！這隻可愛的夥伴將陪伴你度過整個遊戲旅程。<br>
+
+二、玩賺企鵝幣：<br>
+現在是時候讓你的小企鵝開始賺取企鵝幣了！透過各種遊戲機制，包括挖礦、交易、繁殖等，你可以讓你的小企鵝賺取更多的企鵝幣。挑戰各種遊戲關卡，展示你的技巧和策略，並與其他玩家一起競爭，成為賺取企鵝幣的高手！<br>
+
+三、成長與升級：<br>
+隨著你的遊戲進展，你的小企鵝將成長並解鎖更多的功能和特殊能力。透過投資和策略，你可以升級你的小企鵝，提高賺取企鵝幣的效率和收益。每一次升級都將帶來更多的樂趣和挑戰！<br>
+
+四、交易與社區：<br>
+遊戲中的企鵝幣是真實的加密貨幣，你可以與其他玩家進行交易，買賣企鵝、道具和其他價值資產。加入我們的熱情社區，與其他玩家交流，分享你的遊戲心得，一同為賺取更多的企鵝幣而努力！<br>
+
+五、真正的玩賺體驗：<br>
+加密貨幣小企鵝玩賺遊戲不僅帶給你娛樂和樂趣，更讓你在遊戲中體驗真實的加密貨幣世界。通過遊戲機制賺取的企鵝幣可以在現實世界中進行兌換和使用，開啟你的玩賺之路！<br>
+
+準備好迎接這個令人興奮的加密貨幣小企鵝玩賺遊戲了嗎？立即購買你的第一隻小企鵝，開始賺取企鵝幣，展現你的玩賺才能吧！<br>
+				</b></p>
+				<div class="exchange-button">
+    <button class="exchangeButton"><b><font color=#ff0000>立即兌換Penguin Coins購買企鵝吧!</font></b></button>
+  </div>
+  
+  <script>
+  var provider = null;
+  var account = null;
+   window.addEventListener('load', async () => {
+
+	document.querySelector("#btn-connect").addEventListener("click", onConnect);
+    const exchangeButton = document.querySelectorAll('.exchangeButton');
+	
+
+	exchangeButton.forEach(function(button) {
+    button.addEventListener('click', async () => {
+      // 檢查是否安裝 METAMASK 錢包
+      if (typeof window.ethereum === 'undefined') {
+        alert('請安裝 METAMASK 錢包');
+        return;
+      }
+
+
+      try {
+        // 請求用戶連接錢包
+        await window.ethereum.request({ method: 'eth_requestAccounts' });
+        // 建立 ethers.js 提供的 Provider
+        provider = new ethers.providers.Web3Provider(window.ethereum);
+        // 取得當前用戶的錢包地址
+        const accounts = await provider.listAccounts();
+        account = accounts[0];
+
+		
+		ethereum.on('accountsChanged', function (accounts) {
+			console.log("account=",accounts)
+			   // Time to reload your interface with accounts[0]! 
+				document.getElementById("name").value = accounts[0];
+				parent.location.reload();
+		});
+				
+				document.querySelector("#btn-connect").style.display = "none";
+				document.querySelector(".mint").style.display = "block";
+				const balance = await provider.getBalance(account);				
+				const balanceInEth = ethers.utils.formatEther(balance);
+
+				document.getElementById("name").innerHTML = "Address:"+accounts[0]+"<br>餘額:"+balanceInEth+"ETH";
+				//showPrice.innerHTML = "Total Price:0.08 ETH";
+				showchainId.innerHTML = "Successfully connected to the main network";
+        
+        // 在這裡添加虛擬貨幣兌換的程式碼
+        // 使用 provider 進行交互，實現虛擬貨幣的換算和交易
+        // 這裡只是示範，實際的虛擬貨幣兌換流程需根據你的需求和後端實現來設計
+        //alert('虛擬貨幣兌換成功！');
+      } catch (error) {
+        console.error(error);
+        alert('虛擬貨幣兌換失敗');
+      }
+    });
+	});
+	});
+  </script>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+						<ul class="grid effect" id="grid">
+						<li>
+							<a class="fancybox" data-fancybox-group="gallery" title="Portfolio name" href="assets/img/portfolio/1.png">
+								<img src="assets/img/portfolio/1.png" alt="" />
+							</a>						
+						</li>
+						<li><a href="assets/img/portfolio/2.png" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/2.png" alt="" /></a></li>
+						<li><a href="assets/img/portfolio/3.png" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/3.png" alt="" /></a></li>
+						<li><a href="assets/img/portfolio/4.png" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/4.png" alt="" /></a></li>
+						<li><a href="assets/img/portfolio/5.png" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/5.png" alt="" /></a></li>
+						<li><a href="assets/img/portfolio/6.png" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/6.png" alt="" /></a></li>
+						<li><a href="assets/img/portfolio/7.png" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/7.png" alt="" /></a></li>
+						<li><a href="assets/img/portfolio/8.png" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/8.png" alt="" /></a></li>
+						<li><a href="assets/img/portfolio/9.png" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/9.png" alt="" /></a></li>
+						<li><a href="assets/img/portfolio/10.png" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/10.png" alt="" /></a></li>  
+						<li><a href="assets/img/portfolio/11.png" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/11.png" alt="" /></a></li>
+						<li><a href="assets/img/portfolio/12.png" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/12.png" alt="" /></a></li>
+						<li><a href="assets/img/portfolio/13.png" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/13.png" alt="" /></a></li>
+						<li><a href="assets/img/portfolio/14.png" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/14.png" alt="" /></a></li>   
+						</ul>
+		</div>
+	</div>
+</div>
+</section>
+<!-- section marketplace -->
+<!-- section contact -->
+
+		
+	</div>
+</div>
+</section>
+<section id="contact">
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="heading">
+				<h3><span>Penguin Games白皮書<br></h3></span>
+				<br>
+			</div>
+			<div class=""><b>
+			<font color=#9370db>	
+            Penguin Games旨在建立一個以加密貨幣為基礎的玩賺遊戲平台，讓玩家可以養育、培訓和交易可愛的小企鵝角色。透過結合區塊鏈技術和遊戲經濟系統，Penguin Games創造了一個去中心化的虛擬世界，讓玩家能夠真正擁有其遊戲資產並參與具有經濟價值的活動。</font>
+			<br>
+			<br>
+			       <p>⓵目標與價值主張<br>
+            Penguin Games的目標是提供一個有趣、具有挑戰性且具有經濟價值的遊戲體驗。我們的價值主張如下：<br>
+                     •真實擁有權：透過NFT技術，玩家可以真正擁有他們的小企鵝角色和其他遊戲資產，並且可以自由地在內部市場進行交易。<br>
+                     •經濟機會：Penguin Coin作為內部加密貨幣，為玩家提供了賺取真實價值的機會。玩家可以通過參與遊戲活動、贏得比賽和交易等方式賺取Penguin Coin。<br>
+                     •社區參與：我們鼓勵玩家參與社區活動、競賽和討論，以促進玩家之間的互動和知識分享。<br>
+                   <br>
+				   ⓶Penguin Coin 加密貨幣<br>
+            Penguin Coin是Penguin Games內部的加密貨幣，具有以下特點：<br>
+                    •名稱：Penguin Coin<br>
+                    •標誌：一隻可愛的小企鵝<br>
+                    •標準：基於區塊鏈技術的代幣，符合ERC-20標準<br>
+                    •發行量：初始總供應量為10億枚Penguin Coin<br>
+                    •分配方式：一部分Penguin Coin將用於遊戲開發、營銷和營運，其餘將透過遊戲活動和社區參與進行分發。<br>
+                   <br>
+				   ⓷遊戲機制<br>
+            Penguin Games提供了以下遊戲機制和功能：<br>
+                    •養育與培訓：玩家可以購買不同品種和特點的小企鵝角色，並通過提供適當的照顧、食物和訓練來養育和培訓它們。<br>
+                    •比賽與競賽：玩家可以參與各種比賽和競賽活動，例如戰鬥對決、競速賽和技能挑戰，以提高他們的小企鵝能力並贏得獎勵。<br>
+                    •交易與市場：Penguin Games將建立一個內部的交易和市場系統，玩家可以使用Penguin Coin進行小企鵝、道具和其他遊戲資源的買賣。<br>
+                   <br>
+				   ⓸社區與經濟生態系統<br>
+            Penguin Games的成功建立在活躍的社區和經濟生態系統之上：<br>
+                    •社區參與：我們鼓勵玩家參與社區討論、舉辦活動和競賽，並提供獎勵和認可給予社區貢獻者。<br>
+                    •開發者生態系統：我們將建立一個開發者生態系統，讓開發者可以創建和貢獻新的小企鵝品種、遊戲功能和擴展模組。<br>
+                    •合作夥伴與整合：我們將與其他區塊鏈項目和平台合作，以提供更多的遊戲內容和整合服務。<br>
+                   <br>
+				   ⓹安全性與隱私保護<br>
+            Penguin Games致力於確保使用者的安全和隱私：<br>
+                    •區塊鏈安全：我們將採用最佳的區塊鏈安全實踐，確保玩家的資產和交易安全。<br>
+                    •隱私保護：我們將遵守隱私法規和最佳實踐，保護玩家的個人資料和隱私。<br>
+                <br>
+                Penguin Games是一個引人入勝的玩賺遊戲，通過加密貨幣和區塊鏈技術為玩家提供真實的擁有權和經濟機會。我們致力於建立一個活躍的社區，與玩家、開發者和合作夥伴共同推動Penguin Games的發展。讓我們一起進入這個可愛的小企鵝世界，享受遊戲的樂趣和經濟的潛力！
+				</b></p>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+<!-- end section contact -->
+<footer>
+<div class="verybottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="aligncenter">
+                <ul class="social-network social-circle">
+                    <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>	
+				</div>				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="aligncenter">
+					<p>
+						    Designed by Fennie Hu
+					</p>
+                    
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+<a href="#" class="scrollup"><i class="fa fa-angle-up fa-2x"></i></a>
+<!-- javascript -->
+<script src="assets/js/jquery-1.9.1.min.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+<script src="assets/js/classie.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/slippry.min.js"></script>
+<script src="assets/js/nagging-menu.js"></script>
+<script src="assets/js/jquery.nav.js"></script>
+<script src="assets/js/jquery.scrollTo.js"></script>
+<script src="assets/js/jquery.fancybox.pack.js"></script> 
+<script src="assets/js/jquery.fancybox-media.js"></script> 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+<script src="assets/js/masonry.pkgd.min.js"></script>
+<script src="assets/js/imagesloaded.js"></script>
+<script src="assets/js/jquery.nicescroll.min.js"></script>
+<script src="assets/js/validate.js"></script>	
+<script src="assets/js/AnimOnScroll.js"></script>
+
+  <!--<script src="https://cdn.jsdelivr.net/npm/web3@1.3.0"></script>-->
+	<script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.0/dist/index.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script>
+
+  <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+
+
+<script src="assets/js/custom.js?v2"></script>
+<script src="assets/js/MetaMask.js"></script>
+<script src="assets/js/mint.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+        <script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$('.navbar-nav li').on('click', function() {
+				$('.navbar-nav li').removeClass('active');
+				$(this).addClass('active');
+			  });
+
+		new AnimOnScroll( document.getElementById( 'grid' ), {
+            minDuration : 0.4,
+            maxDuration : 0.7,
+            viewportFactor : 0.2
+        } );
+
+		  $('#slippry-slider').slippry(
+			defaults = {
+				transition: 'vertical',
+				useCSS: true,
+				speed: 5000,
+				pause: 3000,
+				initSingle: false,
+				auto: true,
+				preload: 'visible',
+				pager: false,		
+			} 
+		  
+		  )
+		});
+
+            // When the window has finished loading create our google map below
+            //google.maps.event.addDomListener(window, 'load', init);
+        
+           /* function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [	{		featureType:"all",		elementType:"all",		stylers:[		{			invert_lightness:true		},		{			saturation:10		},		{			lightness:30		},		{			gamma:0.5		},		{			hue:"#5C9F24"		}		]	}	]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using out element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+            }*/
+
+
+			var smaddress = '0x270f246db3f4cfa7bf6fc8f4e414faf5f68e7ee5';
+		
+		const ethereumButton = document.querySelector('.enableEthereumButton');
+		const showAccount = document.querySelector('.showAccount');
+		const showchainId = document.querySelector('.showchainId');
+		const showPrice = document.querySelector('.showPrice');
+
+        
+		async function onConnect() {
+			// 偵測到使用的是新版MetaMask
+			if (typeof window.ethereum !== 'undefined') {
+				window.web3 = new Web3(ethereum);
+				try {
+					// 請求用戶授權
+					//await ethereum.enable(); 
+					await ethereum.request({ method: 'eth_requestAccounts' });
+					// Acccounts now exposed
+					accounts = await web3.eth.getAccounts();
+					Contract = await new web3.eth.Contract(abi,smaddress);
+					document.getElementById("name").value = accounts[0];
+					ethereum.on('accountsChanged', function (accounts) {
+						   // Time to reload your interface with accounts[0]! 
+						document.getElementById("name").value = accounts[0];
+						parent.location.reload();
+					});
+					chainId = await web3.eth.getChainId();
+					console.log(chainId);
+					ethereum.on('chainChanged',(chainId) => {
+						// Handle the new chain.
+						// Correctly handling chain changes can be complicated.
+						// We recommend reloading the page unless you have good reason not to.
+						window.location.reload();
+					});
+					
+						showchainId.innerHTML = "Please connect to main network";
+				
+					showAccount.innerHTML = "Address:"+accounts[0];
+					showPrice.innerHTML = "Total Price:0.080ETH";
+					console.log(accounts[0]);
+					//console.log(Contract);
+					//web3.eth.sendTransaction({/* ... */});
+					
+				} catch (error) {
+					showAccount.innerHTML = "Please connect wallet";
+					// User denied account access...
+				}
+			}else{
+				return swal ( "info" ,  "You need to use MetaMask Browser to be able to mint." ,  "info" ,{button: "go to browser"} )
+				.then(function () {
+					window.location.href = "https://metamask.app.link/dapp/themaverse.io"
+				});
+				
+			}
+	}
+
+	window.addEventListener('load', async () => {
+		document.querySelector("#btn-connect").addEventListener("click", onConnect);
+		//document.querySelector("#btn-disconnect").addEventListener("click", onDisconnect);
+	  });
+        </script>
+</body>
+</html>
